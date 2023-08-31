@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 7%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:185px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none ;
+    margin: 10px 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: large;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    background-image: linear-gradient(45deg, rgb(223, 72, 129), rgb(255 159 133));
+    padding: 10px 15px;
+    border-radius:50%;
+    border: 1px solid yellow;
+}
+
+.login-bttn{
+    text-decoration: none;
+    color: #333;
+    margin-right:15px;
+    font-weight: 400;
+}
+
+.bttn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, rgb(223, 72, 129), rgb(255 159 133));
+    font-size: 14px;
+    border-radius:30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+
+.content h1{
+    font-size: 70px;
+    color:#222;
+
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+
+.content .bttn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.bttn:hover{
+    border-top-right-radius: 30px;
+}
+
+.feature-img{
+    width: 610px;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    top: 11%;
+}
+
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.desc{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 16px 27px;
+    font-family:'Pacifico';
+
+}
+
+.shloka{
+    width: 80%;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 10px 10%;
+    text-align: center;
+}
+
+
+.container>footer{
+    width: 100% !important;
+    margin-right: 0px 0px 0px 0px !important;
+    border-top-left-radius: 40%;
+    color: #fff;
+    background-image: linear-gradient(45deg, rgb(223, 72, 129), rgb(255 159 133));
+    font-size: 14px;
+}
+
+.show-img{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(./images/mybg.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    top: auto;
+    align-items: center;
+}
+
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container2>h2{
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(190, 118, 146), rgb(255, 161, 135));
+    border-radius: 30%;
+}
+
+.price-row{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px;
+}
+
+.price-col{
+    background-color: #1f283b ;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.price-col>p{
+    font-size: 22px;
+}
+
+.price-col>h3{
+    font-size: 35px;
+    font-weight: 500;
+    padding: 20px 0 40px;
+}
+
+.price-col>h3>span{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 0 40px;
+}
+
+.price-col>ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col ul li::before{
+    content: '\2023';
+    color:red;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button{
+    background:transparent !important;
+    width: 100%;
+    padding: 14px 0px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s!important;
+}
+
+.price-col button:hover{
+    background:  #e33058 !important;
+    border-radius: 14px;
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
